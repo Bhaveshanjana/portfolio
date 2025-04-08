@@ -4,11 +4,12 @@ import img from "../assets/uber.png";
 const Project = () => {
   return (
     <>
+      {/* First project */}
       <div className="px-6 ">
-        <h1 className="text-white text-center mt-16 sm:text-2xl lg:text-3xl font-semibold tracking-wider">
+        <h1 className="text-white text-center mt-16 sm:text-2xl lg:text-3xl font-semibold tracking-wider mb-2">
           Featured Projects{" "}
         </h1>
-        <div className="bg-white flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%]">
+        <div className="bg-cyan-50 flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%] ">
           <h2 className="bg-gradient-to-l from-yellow-700 to to-blue-500 bg-clip-text text-transparent font-semibold text-2xl sm:text-2xl">
             Uber
           </h2>
@@ -17,21 +18,27 @@ const Project = () => {
             alt="uber.png"
             className="w-[99%] h-[150px] rounded-md sm:w-[650px]"
           />
-          <div className="flex mr-9 items-center gap-3 pt-2">
-            <p className="bg-gray-500 rounded-full px-2 py-0.5 text-sm ">
+          <div className="flex ml-2 items-center gap-3 pt-2 flex-wrap mb-2">
+            <p className="bg-gray-500 rounded-md px-2 py-0.5 text-sm  text-white">
               React
             </p>
-            <p className="bg-gray-500 rounded-full px-2 py-0.5 text-sm">
-              React
+            <p className="bg-gray-500 rounded-md px-2 py-0.5 text-sm text-white">
+              Express.js
             </p>
-            <p className="bg-gray-500 rounded-full px-2 py-0.5 text-sm">
-              React
+            <p className="bg-gray-500 rounded-md px-2 py-0.5 text-sm text-white">
+              Mongo DB
             </p>
-            <p className="bg-gray-500 rounded-full px-2 py-0.5 text-sm">
-              React
+            <p className="bg-gray-500 rounded-md px-2 py-0.5 text-sm text-white">
+              Node.js
+            </p>
+            <p className="bg-gray-500 rounded-md px-2 py-0.5 text-sm text-white">
+              Tailwind CSS
+            </p>
+            <p className="bg-gray-500 rounded-md px-2 py-0.5 text-sm text-white">
+              Google api
             </p>
           </div>
-          <div className="text-sm ml-4 max-w-[280px] mt-2">
+          <div className="text-sm ml-4 max-w-[280px] mt-2 mb-2">
             <ul className="space-y-0.5">
               <li className="list-disc">
                 A video chat application that allows users to create and join
@@ -55,18 +62,13 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="px-6">
-        <h1 className="text-white text-center mt-16 sm:text-2xl lg:text-3xl font-semibold tracking-wider">
-          Featured Projects{" "}
-        </h1>
+      {/* Second project */}
+      <div className="px-6 mt-4">
         <div className="bg-white flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%]">
-          <h2 className="bg-gradient-to-l from-yellow-700 to to-blue-500 bg-clip-text text-transparent font-semibold text-2xl sm:text-2xl">
-            Uber
-          </h2>
           <img
             src={img}
             alt="uber.png"
-            className="w-[99%] h-[150px] rounded-md sm:w-[650px]"
+            className="w-[99%] h-[150px] rounded-md sm:w-[650px] mt-1"
           />
           <div className="flex mr-9 items-center gap-3 pt-2">
             <p className="bg-gray-500 rounded-full px-2 py-0.5 text-sm ">
@@ -82,7 +84,7 @@ const Project = () => {
               React
             </p>
           </div>
-          <div className="text-sm ml-4 max-w-[280px] mt-2">
+          <div className="text-sm ml-4 max-w-[280px] mt-2 mb-2">
             <ul className="space-y-0.5">
               <li className="list-disc">
                 A video chat application that allows users to create and join
@@ -106,18 +108,13 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="px-6">
-        <h1 className="text-white text-center mt-16 sm:text-2xl lg:text-3xl font-semibold tracking-wider">
-          Featured Projects{" "}
-        </h1>
+      {/* Third Project */}
+      <div className="px-6 mt-4">
         <div className="bg-white flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%]">
-          <h2 className="bg-gradient-to-l from-yellow-700 to to-blue-500 bg-clip-text text-transparent font-semibold text-2xl sm:text-2xl">
-            Uber
-          </h2>
           <img
             src={img}
             alt="uber.png"
-            className="w-[99%] h-[150px] rounded-md sm:w-[650px]"
+            className="w-[99%] h-[150px] rounded-md sm:w-[650px] mt-1"
           />
           <div className="flex mr-9 items-center gap-3 pt-2">
             <p className="bg-gray-500 rounded-full px-2 py-0.5 text-sm ">
