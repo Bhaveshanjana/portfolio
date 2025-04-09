@@ -6,10 +6,10 @@ const Project = () => {
     <>
       {/* First project */}
       <div className="px-6 ">
-        <h1 className="text-white text-center mt-16 sm:text-2xl lg:text-3xl font-semibold tracking-wider mb-2">
+        <h1 className="text-white text-center mt-12 sm:text-2xl lg:text-3xl font-semibold tracking-wider mb-2">
           Featured Projects{" "}
         </h1>
-        <div className="bg-cyan-50 flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%] ">
+        <div className="bg-gradient-to-t from-cyan-200 to to-gray-400 flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[40%] ">
           <h2 className="bg-gradient-to-l from-yellow-700 to to-blue-500 bg-clip-text text-transparent font-semibold text-2xl sm:text-2xl">
             Uber
           </h2>
@@ -64,7 +64,7 @@ const Project = () => {
       </div>
       {/* Second project */}
       <div className="px-6 mt-4">
-        <div className="bg-white flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%]">
+        <div className="bg-gradient-to-t from-cyan-200 to to-gray-400 flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[40%]">
           <img
             src={img}
             alt="uber.png"
@@ -85,7 +85,7 @@ const Project = () => {
             </p>
           </div>
           <div className="text-sm ml-4 max-w-[280px] mt-2 mb-2">
-            <ul className="space-y-0.5">
+            <ul className="space-y-2">
               <li className="list-disc">
                 A video chat application that allows users to create and join
                 video calls.
@@ -110,7 +110,7 @@ const Project = () => {
       </div>
       {/* Third Project */}
       <div className="px-6 mt-4">
-        <div className="bg-white flex flex-col items-center mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[60%]">
+        <div className="bg-gradient-to-t from-cyan-200 to to-gray-400  flex flex-col  mx-auto rounded-sm w-[90%] sm:mt-4 sm:w-[40%]">
           <img
             src={img}
             alt="uber.png"
@@ -130,7 +130,7 @@ const Project = () => {
               React
             </p>
           </div>
-          <div className="text-sm ml-4 max-w-[280px] mt-2">
+          <div className="text-sm max-w-[280px] mt-2 lg:flex lg:mr-28">
             <ul className="space-y-0.5">
               <li className="list-disc">
                 A video chat application that allows users to create and join

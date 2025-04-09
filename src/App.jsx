@@ -39,7 +39,7 @@ const App = () => {
         <h1 className="text-center text-2xl text-white mb-2 border-t-2 border-b-emerald-200">
           Get in touch
         </h1>
-        <div className=" flex flex-col space-y-2 w-[80%] mx-auto">
+        <div className=" flex flex-col space-y-2 w-[80%] mx-auto lg:text-[15px]">
           <div className="flex justify-start gap-2 items-center">
             <FiMail className=" text-blue-400 text-xl" />
             <span className="text-white">Bhavesh58@gmail.com</span>
@@ -56,7 +56,7 @@ const App = () => {
 
         {/* tuch via email */}
         <div className="text-white space-y-4 mt-4 w-[80%] mx-auto">
-          <h1 className="text-2xl">Reach me out via email</h1>
+          <h1 className="text-xl">Reach me out via email</h1>
           <form>
             <h3>Your email</h3>
             <input
@@ -72,7 +72,7 @@ const App = () => {
               placeholder="Enter your message"
               className="w-full m-2 border-[#374151] bg-transparent border shadow-sm p-2 rounded-sm"
             />
-            <button className="bg-cyan-50 w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer">
+            <button className="bg-cyan-50 w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400">
               Send message
             </button>
           </form>
