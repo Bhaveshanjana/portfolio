@@ -72,11 +72,11 @@ const App = () => {
               placeholder="Enter your message"
               className="w-full m-2 border-[#374151] bg-transparent border shadow-sm p-2 rounded-sm"
             />
-            <button className="bg-cyan-50 w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400">
+            <button className=" w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400">
               Send message
             </button>
           </form>
-          <footer className="text-center bg-gradient-to-l from-blue-700 to to-green-500 bg-clip-text text-transparent text-sm">
+          <footer className="text-center bg-gradient-to-l from-blue-700 to to-green-500 bg-clip-text text-transparent text-sm ">
             Designed by bhavesh
           </footer>
         </div>

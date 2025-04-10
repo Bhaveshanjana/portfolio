@@ -15,103 +15,111 @@ import redux from "../assets/redux.png";
 const Skill = () => {
   return (
     <div>
-      <h1 className="text-white text-center text-xl my-4 sm:text-2xl md:text-3xl font-medium tracking-wider">Skills</h1>
-      <div className="grid grid-cols-3 lg:grid-cols-6 lg:ml-32 sm:grid-cols-4 ml-11 sm:ml-16 mt-12 space-y-9">
-        <div className=" w-[100px] flex items-center flex-col ">
+      <h1 className="text-white text-center text-xl my-4 sm:text-2xl md:text-3xl font-medium tracking-wider mt-12 ">
+        <header className="border-b-2 border-blue-400/60 inline-block font-bold text">
+          <span className="">Tech</span>{" "}
+          <span className="text-blue-400/60 ">Stack</span>
+        </header>
+      </h1>
+      <div className="grid grid-cols-3 lg:grid-cols-5 sm:grid-cols-4 place-items-center cursor-pointer space-y-4 lg:mt-16">
+        <div className=" w-[100px] flex items-center flex-col bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={javascript}
             alt="javascript.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px] "
           />
-          <span className="text-white mt-1">Javascript</span>
+          <span className="text-white text-[12px] lg:text-xl">Javascript</span>
         </div>
-        <div className="rounded-full w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col justify-center bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={html}
             alt="html.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">HTML5</span>
+          <span className="text-white text-[12px] lg:text-xl">HTML5</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={bootstrap}
             alt="bootstrap.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">BootStrap</span>
+          <span className="text-white text-[12px] lg:text-xl">BootStrap</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={node}
             alt="nodejs.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">NodeJs</span>
+          <span className="text-white text-[12px] lg:text-xl">NodeJs</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={express}
             alt="expressjs.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">ExpressJs</span>
+          <span className="text-white text-[12px] lg:text-xl">ExpressJs</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={mongo}
             alt="mongodb.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">Mongo DB</span>
+          <span className="text-white text-[12px] lg:text-xl">Mongo DB</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={git}
             alt="git.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">Git</span>
+          <span className="text-white text-[12px] lg:text-xl">Git</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={react}
-            alt="react.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            alt="React.png"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">React</span>
+          <span className="text-white text-[12px] lg:text-xl">React</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={css}
             alt="css.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">CSS</span>
+          <span className="text-white text-[12px] lg:text-xl">CSS</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col ">
+        <div className=" w-[100px] flex items-center flex-col bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={tailwind}
             alt="tailwind.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">Tailwind CSS</span>
+          <span className="text-white text-[11px] text-center lg:text-[18px]">
+            Tailwind CSS
+          </span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+
+        <div className=" w-[100px] flex items-center flex-col  bg-gray-900 rounded-md p-4 lg:w-[13vw]">
           <img
             src={redux}
-            alt="tailwind.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            alt="Redux.png"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">Redux</span>
+          <span className="text-white text-[12px] lg:text-xl">Redux</span>
         </div>
-        <div className=" w-[100px] flex items-center flex-col">
+        <div className=" w-[100px] flex items-center flex-col bg-gray-900 rounded-md p-4 -mt-3 lg:w-[13vw]">
           <img
             src={github}
-            alt="tailwind.png"
-            className="w-12 sm:min-w-[70px] lg:min-w-[70px]"
+            alt="github.png"
+            className="w-9 sm:min-w-[70px] lg:min-w-[70px]"
           />
-          <span className="text-white mt-1">Github</span>
+          <span className="text-white text-[12px] lg:text-xl">Github</span>
         </div>
       </div>
     </div>
