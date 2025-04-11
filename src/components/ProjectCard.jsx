@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "motion/react";
+import { Slidup } from "./Utility";
 
 const ProjectCard = ({ title, image, gitimg, linkimg, techs }) => {
   return (
-    <div className="bg-gray-800/80 flex flex-col items-center mx-auto rounded-sm w-[90%] sm:w-[40%] lg:w-[80%] hover:shadow-lg hover:shadow-blue-400/50 transition-all duration-300 my-8">
+    <motion.div 
+    variants={Slidup(0.4)}
+    initial="initial"
+    whileInView='animate'
+    className="bg-gray-800/80 flex flex-col items-center mx-auto rounded-sm w-[90%] sm:w-[40%] lg:w-[80%] hover:shadow-lg hover:shadow-blue-400/50 transition-all duration-300 my-8">
       <img
         src={image}
         alt={`${title} screenshot`}
@@ -28,7 +34,7 @@ const ProjectCard = ({ title, image, gitimg, linkimg, techs }) => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

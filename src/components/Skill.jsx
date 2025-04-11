@@ -12,6 +12,7 @@ import tailwind from "../assets/tailwind.png";
 import github from "../assets/github.png";
 import redux from "../assets/redux.png";
 import Card from "./Card";
+import { motion } from "motion/react";
 
 const Skill = () => {
   const TechStack = [
@@ -36,11 +37,16 @@ const Skill = () => {
           <span className="text-blue-400/60 ">Stack</span>
         </h1>
       </header>
-      <div className="grid grid-cols-3 lg:grid-cols-5 sm:grid-cols-4 place-items-center cursor-pointer space-y-4 lg:mt-16 ">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.9 }}
+        className="grid grid-cols-3 lg:grid-cols-5 sm:grid-cols-4 place-items-center cursor-pointer space-y-4 lg:mt-16 "
+      >
         {TechStack.map((tech, index) => (
           <Card key={index} icon={tech.icon} label={tech.label} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
+import { Slidup } from "./Utility";
+import { motion } from "motion/react";
 
 const Mail = () => {
   const [message, setMessage] = useState("");
@@ -31,7 +33,11 @@ const Mail = () => {
       );
   };
   return (
-    <div className="text-white space-y-4 mt-4 w-[80%] mx-auto">
+    <motion.div
+    variants={Slidup(0.6)}
+        initial="initial"
+        whileInView="animate"
+    className="text-white space-y-4 mt-4 w-[80%] mx-auto">
       <h1 className="text-xl">Reach me out via email</h1>
       <form onSubmit={sendEmail} ref={form}>
         <h3>Your email</h3>
@@ -67,13 +73,13 @@ const Mail = () => {
         </button>
 
         {/* Container component for toast alert */}
-        
+
         <ToastContainer />
       </form>
       <footer className="text-center bg-gradient-to-l from-blue-700 to to-green-500 bg-clip-text text-transparent text-sm ">
         Designed by bhavesh
       </footer>
-    </div>
+    </motion.div>
   );
 };
 
