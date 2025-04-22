@@ -17,7 +17,7 @@ const Mail = () => {
         `${import.meta.env.VITE_TEMPLATE_ID}`,
         form.current,
         {
-          publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
         }
       )
       .then(
@@ -67,7 +67,7 @@ const Mail = () => {
         <button
           type="submit"
           disabled={!email || !message}
-          className=" w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400"
+          className=" w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400 ml-2"
         >
           Send message
         </button>
@@ -76,9 +76,7 @@ const Mail = () => {
 
         <ToastContainer />
       </form>
-      <footer className="text-center bg-gradient-to-l from-blue-700 to to-green-500 bg-clip-text text-transparent text-sm ">
-        Designed by bhavesh
-      </footer>
+      
     </motion.div>
   );
 };

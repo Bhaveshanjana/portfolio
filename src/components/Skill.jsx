@@ -31,12 +31,18 @@ const Skill = () => {
   ];
   return (
     <div>
-      <header className="text-white text-center text-xl my-4 sm:text-2xl md:text-3xl font-medium tracking-wider mt-12 ">
+      <motion.header
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-white text-center text-xl my-4 sm:text-2xl md:text-3xl font-medium tracking-wider mt-12 "
+      >
         <h1 className="border-b-2 border-blue-400/60 inline-block font-bold text">
           <span className="">Tech</span>{" "}
           <span className="text-blue-400/60 ">Stack</span>
         </h1>
-      </header>
+      </motion.header>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
