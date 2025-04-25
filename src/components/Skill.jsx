@@ -25,7 +25,7 @@ const Skill = () => {
     { icon: git, label: "Git" },
     { icon: react, label: "React" },
     { icon: css, label: "CSS" },
-    { icon: tailwind, label: "Tailwind CSS" },
+    { icon: tailwind, label: "TailwindCss" },
     { icon: redux, label: "Redux" },
     { icon: github, label: "Github" },
   ];
@@ -47,7 +47,7 @@ const Skill = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9 }}
-        className="grid grid-cols-3 lg:grid-cols-5 sm:grid-cols-4 place-items-center cursor-pointer space-y-4 lg:mt-16 "
+        className="grid grid-cols-3 lg:grid-cols-5 sm:grid-cols-4 place-items-center text-center cursor-pointer space-y-4 lg:mt-16 "
       >
         {TechStack.map((tech, index) => (
           <Card key={index} icon={tech.icon} label={tech.label} />

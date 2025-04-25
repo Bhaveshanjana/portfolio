@@ -11,7 +11,7 @@ import { Slidup } from "./Utility";
 const ContactSection = () => {
   return (
     <div id="contact" className="py-20 bg-gray-900/80">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-1xl mx-auto px-2 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

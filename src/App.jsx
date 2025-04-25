@@ -32,7 +32,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen">
+    <div className="bg-gray-900 min-h-screen overflow-x-hidden">
       {/* Navbar */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
@@ -41,7 +41,7 @@ const App = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, x: -150 }}
             animate={{ opacity: 1, x: 0 }}
