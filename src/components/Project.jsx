@@ -10,8 +10,9 @@ import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
 import google from "../assets/google.jpeg";
 import img2 from "../assets/image.png";
-import wipeBg from "../assets/wipebg.png"
-import buzzBoot from "../assets/BuzzBot.png"
+import wipeBg from "../assets/wipebg.png";
+import buzzBoot from "../assets/BuzzBot.png";
+import taskpilot from "../assets/taskpilot.png";
 
 const projects = [
   {
@@ -56,12 +57,24 @@ const projects = [
     title: "BuzzBot",
     image: buzzBoot,
     github: "https://github.com/Bhaveshanjana/BUZZBOT",
-    techs:[
-      {icon: express, name: "ExpressJs"},
-      {icon: node, name: "NodeJs"},
-
-    ]
-  }
+    techs: [
+      { icon: express, name: "ExpressJs" },
+      { icon: node, name: "NodeJs" },
+    ],
+  },
+  {
+    title: "TaskPilot",
+    image: taskpilot,
+    github: "https://github.com/Bhaveshanjana/TaskPilot",
+    link: "https://task-pilot-delta.vercel.app/",
+    techs: [
+      { icon: react, name: "React" },
+      { icon: express, name: "ExpressJs" },
+      { icon: node, name: "NodeJs" },
+      { icon: mongo, name: "MongoDB" },
+      { icon: tailwind, name: "TailwindCSS" },
+    ],
+  },
 ];
 
 const Project = () => {
