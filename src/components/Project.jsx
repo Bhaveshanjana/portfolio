@@ -13,6 +13,7 @@ import img2 from "../assets/image.png";
 import wipeBg from "../assets/wipebg.png";
 import buzzBoot from "../assets/BuzzBot.png";
 import taskpilot from "../assets/taskpilot.png";
+import TravoBot from "../assets/TravoBot.png";
 
 const projects = [
   {
@@ -73,6 +74,19 @@ const projects = [
       { icon: node, name: "NodeJs" },
       { icon: mongo, name: "MongoDB" },
       { icon: tailwind, name: "TailwindCSS" },
+    ],
+  },
+  {
+    title: "TravoBot",
+    image: TravoBot,
+    github: "https://github.com/Bhaveshanjana/TravoBot",
+    link: "https://travo-bot.vercel.app/",
+    techs: [
+      { icon: react, name: "React" },
+      { icon: express, name: "ExpressJs" },
+      { icon: node, name: "NodeJs" },
+      { icon: tailwind, name: "TailwindCSS" },
+      { icon: google, name: "GoogleApi" },
     ],
   },
 ];
