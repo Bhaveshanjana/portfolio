@@ -14,32 +14,21 @@ import wipeBg from "../assets/wipebg.png";
 import buzzBoot from "../assets/BuzzBot.png";
 import taskpilot from "../assets/taskpilot.png";
 import TravoBot from "../assets/TravoBot.png";
+import gemini from "../assets/gemini.jpg";
 
 const projects = [
   {
-    title: "Uber Clone",
-    image: img,
-    github: "https://github.com/Bhaveshanjana/Uber",
+    title: "TravoBot",
+    image: TravoBot,
+    github: "https://github.com/Bhaveshanjana/TravoBot",
+    link: "https://travo-bot.vercel.app/",
     techs: [
       { icon: react, name: "React" },
       { icon: express, name: "ExpressJs" },
       { icon: node, name: "NodeJs" },
-      { icon: mongo, name: "MongoDB" },
       { icon: tailwind, name: "TailwindCSS" },
       { icon: google, name: "GoogleApi" },
-    ],
-  },
-  {
-    title: "Coursecrate",
-    image: img2,
-    github: "https://github.com/Bhaveshanjana/CourseCrate",
-    link: "https://coursecrate.vercel.app",
-    techs: [
-      { icon: react, name: "React" },
-      { icon: express, name: "ExpressJs" },
-      { icon: node, name: "NodeJs" },
-      { icon: mongo, name: "MongoDB" },
-      { icon: tailwind, name: "TailwindCSS" },
+      { icon: gemini, name: "Gemini Flash 2.0" },
     ],
   },
   {
@@ -61,6 +50,7 @@ const projects = [
     techs: [
       { icon: express, name: "ExpressJs" },
       { icon: node, name: "NodeJs" },
+      { icon: gemini, name: "Gemini Flash 2.0" },
     ],
   },
   {
@@ -77,14 +67,27 @@ const projects = [
     ],
   },
   {
-    title: "TravoBot",
-    image: TravoBot,
-    github: "https://github.com/Bhaveshanjana/TravoBot",
-    link: "https://travo-bot.vercel.app/",
+    title: "Coursecrate",
+    image: img2,
+    github: "https://github.com/Bhaveshanjana/CourseCrate",
+    link: "https://coursecrate.vercel.app",
     techs: [
       { icon: react, name: "React" },
       { icon: express, name: "ExpressJs" },
       { icon: node, name: "NodeJs" },
+      { icon: mongo, name: "MongoDB" },
+      { icon: tailwind, name: "TailwindCSS" },
+    ],
+  },
+  {
+    title: "Uber Clone",
+    image: img,
+    github: "https://github.com/Bhaveshanjana/Uber",
+    techs: [
+      { icon: react, name: "React" },
+      { icon: express, name: "ExpressJs" },
+      { icon: node, name: "NodeJs" },
+      { icon: mongo, name: "MongoDB" },
       { icon: tailwind, name: "TailwindCSS" },
       { icon: google, name: "GoogleApi" },
     ],
