@@ -29,12 +29,12 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 ">
           <motion.div
             variants={Slidup(0.2)}
             whileInView={"animate"}
             initial="initial"
-            className="bg-gray-800/50 p-8 rounded-xl border border-gray-700"
+            className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 w-80 sm:w-[80%] md:w-full mx-auto"
           >
             <h3 className="text-xl font-semibold text-white mb-6">
               Contact Information
@@ -45,8 +45,8 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
                   <FiMail size={20} />
                 </div>
-                <div>
-                  <p className="text-sm text-gray-400">Email</p>
+                <div className="text-sm">
+                  <p className="text-gray-400">Email</p>
                   <p className="text-white">bhaveshanjana58@gmail.com</p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
                   <IoMdCall size={20} />
                 </div>
-                <div>
+                <div className="text-sm">
                   <p className="text-sm text-gray-400">Phone</p>
                   <p className="text-white">+91 6378978141</p>
                 </div>
@@ -65,7 +65,7 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
                   <MdOutlineLocationOn size={20} />
                 </div>
-                <div>
+                <div className="text-sm">
                   <p className="text-sm text-gray-400">Location</p>
                   <p className="text-white">Chittorgargh, Rajasthan</p>
                 </div>

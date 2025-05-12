@@ -6,9 +6,9 @@ const Card = ({ icon, label }) => {
       <img
         src={icon}
         alt={`${label}logo`}
-        className="w-11 sm:min-w-[70px] lg:min-w-[48px] "
+        className="w-11 sm:min-w-[60px] lg:min-w-[62px] "
       />
-      <span className="text-white text-[12px] lg:text-[17px]">{label}</span>
+      <span className="text-white text-[12px] sm:text-[16px]">{label}</span>
     </div>
   );
 };

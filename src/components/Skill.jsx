@@ -36,7 +36,7 @@ const Skill = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-white text-center text-xl my-4 sm:text-2xl md:text-3xl font-medium tracking-wider mt-12 "
+        className="text-white text-center text-xl my-4 sm:text-3xl md:text-3xl font-medium tracking-wider mt-12 "
       >
         <h1 className="border-b-2 border-blue-400/60 inline-block font-bold text">
           <span className="">Tech</span>{" "}

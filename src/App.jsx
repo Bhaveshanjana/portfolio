@@ -252,7 +252,7 @@ const App = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Featured Projects
@@ -263,7 +263,11 @@ const App = () => {
               using various technologies.
             </p>
           </motion.div>
-
+          <div className="flex items-center justify-center text-center leading-4 gap-6 text-white text-sm md:text-2xl sm:leading-0">
+            <h1>Ai bot's</h1>
+            <h1 className="w-20 sm:w-fit">Mern Stack Projects</h1>
+            <h1 className="w-20 sm:w-fit">Mini Projects</h1>
+          </div>
           <Project />
         </div>
       </div>
