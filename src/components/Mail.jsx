@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
-import { Slidup } from "./Utility";
 import { motion } from "motion/react";
 
 const Mail = () => {
@@ -22,7 +21,6 @@ const Mail = () => {
       )
       .then(
         () => {
-          console.log("Mail sended");
           setEmail("");
           setMessage("");
           toast.success("Mail sended successfully", { position: "top-center" });
@@ -33,11 +31,7 @@ const Mail = () => {
       );
   };
   return (
-    <motion.div
-    variants={Slidup(0.6)}
-        initial="initial"
-        whileInView="animate"
-    className="text-white space-y-4 mt-4 w-[80%] mx-auto">
+    <div className="text-white space-y-4 mt-4 w-[80%] mx-auto">
       <h1 className="text-xl">Reach me out via email</h1>
       <form onSubmit={sendEmail} ref={form}>
         <h3>Your email</h3>
@@ -67,7 +61,7 @@ const Mail = () => {
         <button
           type="submit"
           disabled={!email || !message}
-          className=" w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400 ml-2"
+          className=" w-full text-black p-1 rounded-md mt-3 text-xl font-light cursor-pointer bg-gray-400 ml-2 hover:bg-gray-500 hover:text-cyan-400 transition-all duration-200 disabled:cursor-no-drop"
         >
           Send message
         </button>
@@ -76,8 +70,7 @@ const Mail = () => {
 
         <ToastContainer />
       </form>
-      
-    </motion.div>
+    </div>
   );
 };
 

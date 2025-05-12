@@ -6,14 +6,14 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import Mail from "./Mail";
-import { Slidup } from "./Utility";
+import { Slidup } from "./utils/Utility";
 
 const ContactSection = () => {
   return (
     <div id="contact" className="py-20 bg-gray-900/80">
       <div className="max-w-1xl mx-auto px-2 md:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
@@ -31,9 +31,10 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <motion.div
-            variants={Slidup(0.2)}
-            whileInView={"animate"}
-            initial="initial"
+            initial={{ y: -90, opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.6 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
             className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 w-80 sm:w-[80%] md:w-full mx-auto"
           >
             <h3 className="text-xl font-semibold text-white mb-6">
@@ -79,7 +80,7 @@ const ContactSection = () => {
                   href="https://www.instagram.com/bhavesh_anjana41"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-pink-600 transition-colors"
+                  className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white duration-400 hover:scale-120 transition-transform"
                 >
                   <FaInstagram />
                 </a>
@@ -87,7 +88,7 @@ const ContactSection = () => {
                   href="https://github.com/Bhaveshanjana"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-gray-900 transition-colors"
+                  className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white duration-400 hover:scale-120 transition-transform"
                 >
                   <FaGithub />
                 </a>
@@ -95,7 +96,7 @@ const ContactSection = () => {
                   href="https://x.com/Bhavesh2034"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-black transition-colors"
+                  className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white duration-400 hover:scale-120 transition-transform"
                 >
                   <RiTwitterXFill />
                 </a>
@@ -104,10 +105,10 @@ const ContactSection = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+            initial={{ y: 90, opacity: 0, scale: 0.95 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            whileInView={{ opacity: 1, y: 0 }}
           >
             <Mail />
           </motion.div>
