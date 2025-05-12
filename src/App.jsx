@@ -6,11 +6,12 @@ import { FiMail, FiMenu, FiX } from "react-icons/fi";
 import Skill from "./components/Skill";
 import ContactSection from "./components/ContactSection";
 import { AnimatePresence, motion } from "framer-motion";
-import { Slidup } from "./components/Utility";
+import { Slidup } from "./components/utils/Utility";
 
 const App = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState("ai");
 
   // HandleScroll for navbar
   useEffect(() => {
@@ -201,7 +202,7 @@ const App = () => {
                   href="https://www.instagram.com/bhavesh_anjana41"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-500 transition-colors duration-300"
+                  className="hover:text-pink-500 duration-400 hover:scale-150 transition-transform"
                   aria-label="Instagram"
                 >
                   <FaInstagram />
@@ -210,7 +211,7 @@ const App = () => {
                   href="https://github.com/Bhaveshanjana"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors duration-300"
+                  className="hover:text-white duration-400 hover:scale-150 transition-transform"
                   aria-label="GitHub"
                 >
                   <FaGithub />
@@ -219,14 +220,14 @@ const App = () => {
                   href="https://x.com/Bhavesh2034"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition-colors duration-300"
+                  className="hover:text-blue-400 duration-400 hover:scale-150 transition-transform"
                   aria-label="Twitter"
                 >
                   <RiTwitterXFill />
                 </a>
                 <a
                   href="mailto:bhaveshanjana58@gmail.com"
-                  className="hover:text-blue-400 transition-colors duration-300"
+                  className="hover:text-blue-400 duration-400 hover:scale-150 transition-transform"
                   aria-label="Email"
                 >
                   <FiMail />
@@ -247,28 +248,60 @@ const App = () => {
       {/* Projects Section */}
       <div id="projects" className="pt-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Featured Projects
-            </h2>
-            <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
-            <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-              Check out some of my recent work and personal projects I've built
-              using various technologies.
-            </p>
-          </motion.div>
-          <div className="flex items-center justify-center text-center leading-4 gap-6 text-white text-sm md:text-2xl sm:leading-0">
-            <h1>Ai bot's</h1>
-            <h1 className="w-20 sm:w-fit">Mern Stack Projects</h1>
-            <h1 className="w-20 sm:w-fit">Mini Projects</h1>
-          </div>
-          <Project />
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, y: 300 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 120,
+                damping: 12,
+                delay: 0.3,
+              }}
+              className="text-center mb-8"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Featured Projects
+              </h2>
+              <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
+              <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+                Check out some of my recent work and personal projects I've
+                built using various technologies.
+              </p>
+            </motion.div>
+          </AnimatePresence>
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, y: -300 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 120,
+                damping: 12,
+                delay: 0.3,
+              }}
+              className="rounded-xl bg-gray-800 py-2 max-w-[260px] sm:max-w-80 mx-auto "
+            >
+              <ul className="flex items-center justify-center text-center gap-6 text-white text-[15px] sm:text-lg sm:leading-6 mx-3 max-w-lg">
+                {[
+                  { label: "AI Bots", key: "ai" },
+                  { label: "Full Stack Projects", key: "mern" },
+                  { label: "Mini Projects", key: "mini" },
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className={`cursor-pointer hover:text-blue-500 transition-all duration-200  ${
+                      selectedCategory === item.key ? "text-blue-400" : ""
+                    }`}
+                    onClick={() => setSelectedCategory(item.key)}
+                  >
+                    <span>{item.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </AnimatePresence>
+          <Project selectedCategory={selectedCategory} />
         </div>
       </div>
 
