@@ -7,6 +7,7 @@ import Skill from "./components/Skill";
 import ContactSection from "./components/ContactSection";
 import { AnimatePresence, motion } from "framer-motion";
 import { Slidup } from "./components/utils/Utility";
+import DarkMode from "./components/DarkMode/DarkMode";
 
 const App = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -38,7 +39,7 @@ const App = () => {
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
           scrollPosition > 50
-            ? "bg-gray-900/90 backdrop-blur-md shadow-lg"
+            ? "bg-transparent backdrop-blur-sm shadow-lg"
             : "bg-transparent"
         }`}
       >
@@ -52,28 +53,34 @@ const App = () => {
             <span className="text-blue-400 tracking-wider">B</span>havesh
           </motion.div>
 
-          {/* Desktop Navigation */}
-          <motion.ul
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="hidden md:flex space-x-8 text-gray-300"
-          >
-            {["Home", "Skills", "Projects", "Contact"].map((item, i) => (
-              <li key={i} className="hover:text-blue-400 transition-colors">
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="py-2 px-1 relative group"
-                >
-                  {item}
-                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-                </a>
+          <div>
+            {/* Desktop Navigation */}
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="hidden md:flex space-x-8 text-gray-300 md:text-lg "
+            >
+              {["Home", "Skills", "Projects", "Contact"].map((item, i) => (
+                <li key={i} className="hover:text-blue-400 transition-colors">
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="py-2 px-1 relative group"
+                  >
+                    {item}
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+                  </a>
+                </li>
+              ))}
+              {/* darkmode */}
+              <li>
+                <DarkMode />
               </li>
-            ))}
-          </motion.ul>
-
+            </motion.ul>
+          </div>
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-4 ">
+            <DarkMode />
             <button
               onClick={() => setNavOpen(!navOpen)}
               className="text-white text-2xl focus:outline-none"
