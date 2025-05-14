@@ -36,11 +36,11 @@ const Skill = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4 }}
         viewport={{ once: true }}
-        className="text-white text-center text-xl my-4 sm:text-3xl md:text-3xl font-medium tracking-wider mt-12 "
+        className="dark:text-white text-gray-700 text-center text-xl my-4 sm:text-3xl md:text-3xl font-medium tracking-wider mt-12 "
       >
-        <h1 className="border-b-2 border-blue-400/60 inline-block font-bold text">
+        <h1 className="border-b-2 dark:border-blue-400/60 inline-block font-bold text">
           <span className="">Tech</span>{" "}
-          <span className="text-blue-400/60 ">Stack</span>
+          <span className="dark:text-blue-400/60 ">Stack</span>
         </h1>
       </motion.header>
       <motion.div

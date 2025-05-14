@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen overflow-x-hidden">
+    <div className="dark:bg-gray-900 min-h-screen overflow-x-hidden bg-gray-50">
       {/* Navbar */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
@@ -50,7 +50,10 @@ const App = () => {
             transition={{ duration: 0.5 }}
             className="text-2xl font-bold text-white"
           >
-            <span className="text-blue-400 tracking-wider">B</span>havesh
+            <h1>
+              <span className="text-blue-400 tracking-wider">B</span>
+              <span className="text-blue-400 dark:text-white">havesh</span>
+            </h1>
           </motion.div>
 
           <div>
@@ -59,7 +62,7 @@ const App = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="hidden md:flex space-x-8 text-gray-300 md:text-lg "
+              className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300 md:text-lg "
             >
               {["Home", "Skills", "Projects", "Contact"].map((item, i) => (
                 <li key={i} className="hover:text-blue-400 transition-colors">
@@ -83,7 +86,7 @@ const App = () => {
             <DarkMode />
             <button
               onClick={() => setNavOpen(!navOpen)}
-              className="text-white text-2xl focus:outline-none"
+              className="dark:text-white text-2xl focus:outline-none"
             >
               {navOpen ? <FiX /> : <FiMenu />}
             </button>
@@ -98,10 +101,10 @@ const App = () => {
               animate={{ opacity: 1, height: "auto" }}
               transition={{ duration: 0.3 }}
               exit={{ y: "-100%" }}
-              className="md:hidden bg-gray-800 shadow-lg"
+              className="md:hidden dark:bg-gray-800 bg-transparent backdrop-blur-md shadow-lg"
             >
               <div className="px-6 py-4">
-                <ul className="space-y-4 text-gray-300">
+                <ul className="space-y-4 dark:text-gray-300 text-gray-700">
                   {["Home", "Skills", "Projects", "Contact"].map((item, i) => (
                     <li
                       key={i}
@@ -155,7 +158,7 @@ const App = () => {
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeIn}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold dark:text-white leading-tight"
               >
                 Hi, I'm{" "}
                 <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
@@ -167,7 +170,7 @@ const App = () => {
                 variants={Slidup(0.2)}
                 whileInView={"animate"}
                 initial="initial"
-                className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed"
+                className="text-lg md:text-xl dark:text-gray-300 text-gray-700 max-w-2xl leading-relaxed"
               >
                 BCA student & passionate full-stack developer with a strong
                 foundation in frontend and backend technologies. I focus on
@@ -185,13 +188,13 @@ const App = () => {
               >
                 <a
                   href="#contact"
-                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-blue-500/30"
+                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium hover:from-blue-600 hover:to-blue-700 transition-all  shadow-lg hover:shadow-blue-500/30"
                 >
                   Get in Touch
                 </a>
                 <a
                   href="#projects"
-                  className="px-6 py-3 rounded-lg border border-gray-700 text-gray-300 font-medium hover:bg-gray-800 transition-all"
+                  className="px-6 py-3 rounded-lg border border-gray-700 dark:text-gray-300 text-gray-700 font-medium dark:hover:bg-gray-800 hover:bg-gray-400 transition-all"
                 >
                   View Projects
                 </a>
@@ -203,13 +206,13 @@ const App = () => {
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeIn}
-                className="flex space-x-5 text-xl text-gray-400"
+                className="flex space-x-5 text-xl text-gray-600"
               >
                 <a
                   href="https://www.instagram.com/bhavesh_anjana41"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-500 duration-400 hover:scale-150 transition-transform"
+                  className="dark:hover:text-pink-500 hover:text-black duration-400 hover:scale-150 transition-transform"
                   aria-label="Instagram"
                 >
                   <FaInstagram />
@@ -218,7 +221,7 @@ const App = () => {
                   href="https://github.com/Bhaveshanjana"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white duration-400 hover:scale-150 transition-transform"
+                  className="dark:hover:text-white hover:text-black duration-400 hover:scale-150 transition-transform"
                   aria-label="GitHub"
                 >
                   <FaGithub />
@@ -227,14 +230,14 @@ const App = () => {
                   href="https://x.com/Bhavesh2034"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-400 duration-400 hover:scale-150 transition-transform"
+                  className="dark:hover:text-blue-400 hover:text-black duration-400 hover:scale-150 transition-transform"
                   aria-label="Twitter"
                 >
                   <RiTwitterXFill />
                 </a>
                 <a
                   href="mailto:bhaveshanjana58@gmail.com"
-                  className="hover:text-blue-400 duration-400 hover:scale-150 transition-transform"
+                  className="dark:hover:text-blue-400 hover:text-black duration-400 hover:scale-150 transition-transform"
                   aria-label="Email"
                 >
                   <FiMail />
@@ -246,14 +249,14 @@ const App = () => {
       </div>
 
       {/* Skills Section */}
-      <div id="skills" className=" bg-gray-900/50">
+      <div id="skills" className=" dark:bg-gray-900/50 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <Skill />
         </div>
       </div>
 
       {/* Projects Section */}
-      <div id="projects" className="pt-20 bg-gray-900">
+      <div id="projects" className="pt-20 dark:bg-gray-900 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <AnimatePresence>
             <motion.div
@@ -267,11 +270,11 @@ const App = () => {
               }}
               className="text-center mb-8"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold dark:text-white text-gray-700 mb-4">
                 Featured Projects
               </h2>
               <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
-              <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+              <p className="mt-4 dark:text-gray-300 text-gray-700 max-w-2xl mx-auto">
                 Check out some of my recent work and personal projects I've
                 built using various technologies.
               </p>
@@ -287,9 +290,9 @@ const App = () => {
                 damping: 12,
                 delay: 0.3,
               }}
-              className="rounded-xl bg-gray-800 py-2 max-w-[260px] sm:max-w-80 mx-auto "
+              className="rounded-xl dark:bg-gray-800 bg-white shadow-md py-2 max-w-[260px] sm:max-w-80 mx-auto "
             >
-              <ul className="flex items-center justify-center text-center gap-6 text-white text-[15px] sm:text-lg sm:leading-6 mx-3 max-w-lg">
+              <ul className="flex items-center justify-center text-center gap-6 dark:text-white text-gray-700 text-[15px] sm:text-lg sm:leading-6 mx-3 max-w-lg">
                 {[
                   { label: "AI Bots", key: "ai" },
                   { label: "Full Stack Projects", key: "mern" },

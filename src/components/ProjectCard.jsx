@@ -19,7 +19,7 @@ const ProjectCard = ({
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, amount: 0.3 }}
-      className="bg-gray-800/80 flex flex-col items-center mx-auto rounded-lg w-[100%] sm:w-[90%] lg:w-[70%] hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300 my-8 overflow-hidden"
+      className="dark:bg-gray-800/80 flex flex-col items-center mx-auto rounded-lg w-[100%] sm:w-[90%] lg:w-[70%] hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300 my-8 overflow-hidden shadow-md"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -34,16 +34,16 @@ const ProjectCard = ({
 
       <div className="flex flex-col w-full p-2 md:p-4">
         <div className="flex justify-between w-full items-center mb-3">
-          <h3 className="text-gray-300 text-lg lg:text-xl ">{title}</h3>
+          <h3 className="dark:text-gray-300 text-gray-700 text-lg lg:text-xl ">{title}</h3>
           <div className="flex gap-1">
             {github && (
               <a href={github} target="_blank" rel="noopener noreferrer">
-                <img src={githubimg} alt="" className="w-7 lg:w-8" />
+                <img src={githubimg} alt="" className="w-7 lg:w-8 hover:scale-110 transition-all duration-200" />
               </a>
             )}
             {link && (
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={linkimg} alt="" className="w-7 lg:w-8" />
+                <img src={linkimg} alt="" className="w-7 lg:w-8 hover:scale-110 transition-all duration-200" />
               </a>
             )}
           </div>
@@ -53,7 +53,7 @@ const ProjectCard = ({
           {techs.map((tech, i) => (
             <div
               key={i}
-              className="bg-gray-700 flex items-center rounded-md px-2 py-1 text-white text-xs lg:text-xs"
+              className="dark:bg-gray-700 bg-gray-300 flex items-center rounded-md px-2 py-1 text-white text-xs lg:text-xs"
             >
               <img src={tech.icon} alt="" className="w-4 h-4 mr-1" />
               <span>{tech.name}</span>
