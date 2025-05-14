@@ -7,7 +7,7 @@ import Skill from "./components/Skill";
 import ContactSection from "./components/ContactSection";
 import { AnimatePresence, motion } from "framer-motion";
 import { Slidup } from "./components/utils/Utility";
-import DarkMode from "./components/DarkMode/DarkMode";
+import DarkMode from "./components/Darkmode/DarkMode";
 
 const App = () => {
   const [navOpen, setNavOpen] = useState(false);
