@@ -8,6 +8,7 @@ import ContactSection from "./components/ContactSection";
 import { AnimatePresence, motion } from "framer-motion";
 import { Slidup } from "./components/utils/Utility";
 import DarkMode from "./components/Darkmode/DarkMode";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -35,6 +36,7 @@ const App = () => {
 
   return (
     <div className="dark:bg-gray-900 min-h-screen overflow-x-hidden bg-gray-50 transition-colors">
+      <SpeedInsights />
       {/* Navbar */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
