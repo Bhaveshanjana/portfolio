@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ icon, label }) => {
   return (
-    <div className="w-[100px] flex items-center flex-col  dark:bg-gray-900 bg-white hover:shadow-2xl  hover:drop-shadow-gray-400 dark:hover:drop-shadow-none rounded-md p-4 lg:w-[13vw] hover:scale-105 transition-all duration-400 gap-1">
+    <div className="w-[90px] sm:w-[100px] flex items-center flex-col dark:bg-gray-800/10 dark:hover:shadow-[#09384ea9]  bg-white shadow-lg hover:shadow-2xl rounded-md p-4 lg:w-[13vw] hover:scale-105 transition-all duration-300 gap-1">
       <img
         src={icon}
         alt={`${label}logo`}

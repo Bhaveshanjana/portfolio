@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <div className="dark:bg-gray-900 min-h-screen overflow-x-hidden bg-gray-50">
+    <div className="dark:bg-gray-900 min-h-screen overflow-x-hidden bg-gray-50 transition-colors">
       {/* Navbar */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
@@ -101,10 +101,10 @@ const App = () => {
               animate={{ opacity: 1, height: "auto" }}
               transition={{ duration: 0.3 }}
               exit={{ y: "-100%" }}
-              className="md:hidden dark:bg-gray-800 bg-transparent backdrop-blur-md shadow-lg"
+              className="md:hidden darkbg-gray-800 bg-gray-300 shadow-lg m-1 rounded-md"
             >
               <div className="px-6 py-4">
-                <ul className="space-y-4 dark:text-gray-300 text-gray-700">
+                <ul className="space-y-4  text-gray-700">
                   {["Home", "Skills", "Projects", "Contact"].map((item, i) => (
                     <li
                       key={i}
@@ -145,7 +145,7 @@ const App = () => {
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeIn}
-                className="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gray-700"
+                className="inline-block py-1 px-3 rounded-full dark:bg-gray-800 bg-gray-600 border border-gray-700"
               >
                 <span className="text-sm text-gray-300">
                   Full-Stack Developer
@@ -158,7 +158,7 @@ const App = () => {
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeIn}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold dark:text-white leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold dark:text-white text-gray-700 leading-tight"
               >
                 Hi, I'm{" "}
                 <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
@@ -188,13 +188,13 @@ const App = () => {
               >
                 <a
                   href="#contact"
-                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium hover:from-blue-600 hover:to-blue-700 transition-all  shadow-lg hover:shadow-blue-500/30"
+                  className="px-6 py-3 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-700 transition-all duration-200 shadow-xl hover:shadow-blue-500/30"
                 >
                   Get in Touch
                 </a>
                 <a
                   href="#projects"
-                  className="px-6 py-3 rounded-lg border border-gray-700 dark:text-gray-300 text-gray-700 font-medium dark:hover:bg-gray-800 hover:bg-gray-400 transition-all"
+                  className="px-6 py-3 rounded-lg border border-gray-700 dark:text-gray-300 hover:text-white text-gray-700 font-medium dark:hover:bg-gray-800 hover:bg-gray-400 shadow-xl hover:shadow-gray-400/30 transition-all duration-300"
                 >
                   View Projects
                 </a>
@@ -319,10 +319,10 @@ const App = () => {
       <ContactSection />
 
       {/* Footer */}
-      <footer className="py-2 bg-gray-900 border-t border-gray-800">
+      <footer className="py-2 dark:bg-gray-900 bg-gray-100 dark:border-t dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} Bhavesh Anjana. All rights reserved.
+          <p className="dark:text-gray-400 text-gray-700">
+            Designed and Developed by Bhavesh.
           </p>
         </div>
       </footer>

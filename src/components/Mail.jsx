@@ -31,7 +31,7 @@ const Mail = () => {
       );
   };
   return (
-    <div className="text-white space-y-4 mt-4 w-[80%] mx-auto">
+    <div className="dark:text-white text-gray-700 space-y-4 mt-4 w-[80%] mx-auto">
       <h1 className="text-xl">Reach me out via email</h1>
       <form onSubmit={sendEmail} ref={form}>
         <h3>Your email</h3>

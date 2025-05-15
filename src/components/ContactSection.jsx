@@ -10,7 +10,7 @@ import { Slidup } from "./utils/Utility";
 
 const ContactSection = () => {
   return (
-    <div id="contact" className="py-20 bg-gray-900/80">
+    <div id="contact" className="py-20 dark:bg-gray-900/80 bg-gray-50">
       <div className="max-w-1xl mx-auto px-2 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -19,11 +19,11 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold dark:text-white text-gray-700 mb-4">
             Get In Touch
           </h2>
           <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
-          <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-4 dark:text-gray-300 text-gray-700 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach
             out!
           </p>
@@ -35,9 +35,9 @@ const ContactSection = () => {
             transition={{ duration: 0.6 }}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
-            className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 w-80 sm:w-[80%] md:w-full mx-auto"
+            className="dark:bg-gray-800/50 bg-white shadow-md p-8 rounded-xl border dark:border-gray-700 border-transparent w-80 sm:w-[80%] md:w-full mx-auto"
           >
-            <h3 className="text-xl font-semibold text-white mb-6">
+            <h3 className="text-xl font-semibold dark:text-white text-gray-700 mb-6">
               Contact Information
             </h3>
 
@@ -47,8 +47,10 @@ const ContactSection = () => {
                   <FiMail size={20} />
                 </div>
                 <div className="text-sm">
-                  <p className="text-gray-400">Email</p>
-                  <p className="text-white">bhaveshanjana58@gmail.com</p>
+                  <p className="dark:text-gray-400 text-gray-700">Email</p>
+                  <p className="dark:text-white text-gray-700">
+                    bhaveshanjana58@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -57,8 +59,10 @@ const ContactSection = () => {
                   <IoMdCall size={20} />
                 </div>
                 <div className="text-sm">
-                  <p className="text-sm text-gray-400">Phone</p>
-                  <p className="text-white">+91 6378978141</p>
+                  <p className=" dark:text-gray-400 text-gray-700">Phone</p>
+                  <p className="dark:text-white text-gray-700">
+                    +91 6378978141
+                  </p>
                 </div>
               </div>
 
@@ -67,14 +71,16 @@ const ContactSection = () => {
                   <MdOutlineLocationOn size={20} />
                 </div>
                 <div className="text-sm">
-                  <p className="text-sm text-gray-400">Location</p>
-                  <p className="text-white">Chittorgargh, Rajasthan</p>
+                  <p className=" dark:text-gray-400 text-gray-700">Location</p>
+                  <p className="dark:text-white text-gray-700">
+                    Chittorgargh, Rajasthan
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8">
-              <h4 className="text-lg font-medium text-white mb-4">Follow Me</h4>
+              <h4 className="text-lg font-medium dark:text-white text-gray-700 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
                   href="https://www.instagram.com/bhavesh_anjana41"

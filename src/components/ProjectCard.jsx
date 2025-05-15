@@ -19,7 +19,7 @@ const ProjectCard = ({
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, amount: 0.3 }}
-      className="dark:bg-gray-800/80 flex flex-col items-center mx-auto rounded-lg w-[100%] sm:w-[90%] lg:w-[70%] hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300 my-8 overflow-hidden shadow-md"
+      className="dark:bg-gray-800/80 bg-gray-300 flex flex-col items-center mx-auto rounded-lg w-[100%] sm:w-[90%] lg:w-[70%] hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300 my-8 overflow-hidden shadow-md"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -53,7 +53,7 @@ const ProjectCard = ({
           {techs.map((tech, i) => (
             <div
               key={i}
-              className="dark:bg-gray-700 bg-gray-300 flex items-center rounded-md px-2 py-1 text-white text-xs lg:text-xs"
+              className="dark:bg-gray-700 bg-white flex items-center rounded-md px-2 py-1 dark:text-white text-gray-800 text-xs lg:text-xs"
             >
               <img src={tech.icon} alt="" className="w-4 h-4 mr-1" />
               <span>{tech.name}</span>
