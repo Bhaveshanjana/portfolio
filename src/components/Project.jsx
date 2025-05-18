@@ -15,6 +15,9 @@ import buzzBoot from "../assets/BuzzBot.png";
 import taskpilot from "../assets/taskpilot.png";
 import TravoBot from "../assets/TravoBot.png";
 import gemini from "../assets/gemini.jpg";
+import daignobot from "../assets/DaignoBot.png";
+import rapidapi from "../assets/rapid.jpeg";
+import Portfolio from "../assets/Portfolio.png";
 
 const projectData = {
   ai: [
@@ -40,6 +43,19 @@ const projectData = {
         { icon: express, name: "ExpressJs" },
         { icon: node, name: "NodeJs" },
         { icon: gemini, name: "Gemini Flash 2.0" },
+      ],
+    },
+    {
+      title: "DaignoBot",
+      image: daignobot,
+      github: "https://github.com/Bhaveshanjana/DiagnoBot",
+      link: "https://diagno-bot.vercel.app/",
+      techs: [
+        { icon: react, name: "React" },
+        { icon: tailwind, name: "TailwindCSS" },
+        { icon: express, name: "ExpressJs" },
+        { icon: node, name: "NodeJs" },
+        { icon: rapidapi, name: "RapidApi" },
       ],
     },
   ],
@@ -94,6 +110,17 @@ const projectData = {
         { icon: react, name: "React" },
         { icon: express, name: "ExpressJs" },
         { icon: node, name: "NodeJs" },
+        { icon: tailwind, name: "TailwindCSS" },
+        { icon: rapidapi, name: "RapidApi" },
+      ],
+    },
+    {
+      title: "Portfolio",
+      image: Portfolio,
+      github: "https://github.com/Bhaveshanjana/Portfolio",
+      link: "https://bhavesh-tech.vercel.app/",
+      techs: [
+        { icon: react, name: "React" },
         { icon: tailwind, name: "TailwindCSS" },
       ],
     },
